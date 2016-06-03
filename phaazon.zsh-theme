@@ -21,8 +21,8 @@ function git_stash() {
   echo ''
 }
 
-PROMPT='%B%F{red}%n  %F{green}%~ $(git_prompt_info)$(git_stash)  $(mark)%f%b '
-RPROMPT='%b%F{blue}⌚ %*%f %B%F{red}%M'
+PROMPT='%B%F{green}%n  %F{red}%~ $(git_prompt_info)$(git_stash)  $(mark)%f%b '
+RPROMPT='%b%F{blue}⌚ %*%f %B%F{black}%M'
 
 # Must use Powerline font, for \uE0A0 to render.
 ZSH_THEME_GIT_PROMPT_PREFIX="%b%fon %F{magenta}\ue0a0 "
