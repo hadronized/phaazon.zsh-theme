@@ -47,7 +47,7 @@ function tags() {
     then
       echo -n " %F{blue}($git_tag)"
     else
-      echo -n " %F{blue}(%F{red}$git_tag %F{green}$cargo_tag%F{blue})"
+      echo -n " %F{blue}(%F{red}$git_tag %F{green}v$cargo_tag%F{blue})"
     fi
   fi
 }
